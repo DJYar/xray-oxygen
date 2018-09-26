@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "ai_stalker.h"
 #include "../../cover_point.h"
 #include "../../cover_evaluators.h"

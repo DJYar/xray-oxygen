@@ -21,8 +21,6 @@ IC	CFixedVertexAllocator::CDataStorage					()
 	u32						byte_count;
 
 	byte_count				= (reserved_vertex_count)*sizeof(CGraphVertex);
-//	m_vertices				= xr_alloc<CGraphVertex>(reserved_vertex_count);
-//	ZeroMemory				(m_vertices,byte_count);
 	m_vertices.resize		(reserved_vertex_count);
 	memory_usage			+= byte_count;
 }
@@ -30,7 +28,6 @@ IC	CFixedVertexAllocator::CDataStorage					()
 TEMPLATE_SPECIALIZATION
 CFixedVertexAllocator::~CDataStorage					()
 {
-//	xr_free					(m_vertices);
 }
 
 TEMPLATE_SPECIALIZATION

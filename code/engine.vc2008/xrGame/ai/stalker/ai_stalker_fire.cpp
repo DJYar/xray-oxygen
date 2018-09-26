@@ -5,8 +5,8 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Fire and enemy parameters for monster "Stalker"
 ////////////////////////////////////////////////////////////////////////////
-
 #include "stdafx.h"
+#include "path_manager.h"
 #include "ai_stalker.h"
 #include "ai_stalker_impl.h"
 #include "../../script_entity_action.h"

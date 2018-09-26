@@ -9,7 +9,7 @@
 #pragma once
 
 #include "object_interfaces.h"
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 
 class CALifeSimulatorHeader {
 protected:

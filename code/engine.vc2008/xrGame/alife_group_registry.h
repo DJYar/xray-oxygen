@@ -6,7 +6,7 @@
 //	Description : ALife group registry
 ////////////////////////////////////////////////////////////////////////////
 #pragma once
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 
 class CSE_ALifeOnlineOfflineGroup;
 class CSE_ALifeDynamicObject;

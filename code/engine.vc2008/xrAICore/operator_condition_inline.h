@@ -5,10 +5,8 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Operator condition inline functions
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
-
-#include "random32.h"
+#include "../xrCore/random32.h"
 
 #define TEMPLATE_SPECIALIZATION template<\
 	typename _condition_type,\
@@ -18,38 +16,38 @@
 #define CAbstractOperatorCondition COperatorConditionAbstract<_condition_type,_value_type>
 
 TEMPLATE_SPECIALIZATION
-IC	CAbstractOperatorCondition::COperatorConditionAbstract	(const _condition_type condition, const _value_type value) :
+inline	CAbstractOperatorCondition::COperatorConditionAbstract	(const _condition_type condition, const _value_type value) :
 	m_condition			(condition),
 	m_value				(value)
 {
-	u32					seed = ::Random32.seed();
-	::Random32.seed		(u32(condition) + 1);
-	m_hash				= ::Random32.random(0xffffffff);
-	::Random32.seed		(m_hash + u32(value));
-	m_hash				^= ::Random32.random(0xffffffff);
-	::Random32.seed		(seed);
+	u32 seed = ::Random32.seed();
+	::Random32.seed(u32(condition) + 1);
+	m_hash = ::Random32.random(0xffffffff);
+	::Random32.seed(m_hash + u32(value));
+	m_hash ^= ::Random32.random(0xffffffff);
+	::Random32.seed(seed);
 }
 
 TEMPLATE_SPECIALIZATION
-IC	const _condition_type &CAbstractOperatorCondition::condition	() const
+inline	const _condition_type &CAbstractOperatorCondition::condition	() const
 {
 	return				(m_condition);
 }
 
 TEMPLATE_SPECIALIZATION
-IC	const _value_type &CAbstractOperatorCondition::value			() const
+inline	const _value_type &CAbstractOperatorCondition::value			() const
 {
 	return				(m_value);
 }
 
 TEMPLATE_SPECIALIZATION
-IC	const u32 &CAbstractOperatorCondition::hash_value	() const
+inline	const unsigned &CAbstractOperatorCondition::hash_value	() const
 {
 	return				(m_hash);
 }
 
 TEMPLATE_SPECIALIZATION
-IC	bool CAbstractOperatorCondition::operator<			(const COperatorCondition &_condition) const
+inline	bool CAbstractOperatorCondition::operator<			(const COperatorCondition &_condition) const
 {
 	if (condition() < _condition.condition())
 		return			(true);
@@ -61,7 +59,7 @@ IC	bool CAbstractOperatorCondition::operator<			(const COperatorCondition &_cond
 }
 
 TEMPLATE_SPECIALIZATION
-IC	bool CAbstractOperatorCondition::operator==			(const COperatorCondition &_condition) const
+inline	bool CAbstractOperatorCondition::operator==			(const COperatorCondition &_condition) const
 {
 	if ((condition() == _condition.condition()) && (value() == _condition.value()))
 		return			(true);

@@ -10,8 +10,8 @@
 #include "patrol_point.h"
 #include "level_graph.h"
 #include "level_graph.h"
-#include "game_level_cross_table.h"
-#include "game_graph.h"
+#include "../xrAICore/game_level_cross_table.h"
+#include "../xrAICore/../xrAICore/../xrAICore/game_graph.h"
 #include "object_broker.h"
 
 #ifdef XRGAME_EXPORTS

@@ -6,6 +6,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "smart_cover_evaluators.h"
 #include "stalker_property_evaluators.h"
 #include "script_game_object.h"

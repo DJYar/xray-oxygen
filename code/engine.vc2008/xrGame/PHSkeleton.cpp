@@ -10,7 +10,7 @@
 #include "../Include/xrRender/Kinematics.h"
 #include "ai_object_location.h"
 #include "ai_space.h"
-#include "game_graph.h"
+#include "../xrAICore/../xrAICore/../xrAICore/game_graph.h"
 #include "PHDestroyable.h"
 
 #define F_MAX         3.402823466e+38F

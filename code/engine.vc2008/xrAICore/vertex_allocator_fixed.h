@@ -5,11 +5,11 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Fixed vertex allocator
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
 
 template <u32 reserved_vertex_count>
-struct CVertexAllocatorFixed {
+struct AI_API CVertexAllocatorFixed
+{
 	template <typename _vertex>
 	class CDataStorage {
 	public:

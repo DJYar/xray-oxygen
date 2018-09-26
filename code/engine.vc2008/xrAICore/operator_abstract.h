@@ -5,9 +5,7 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Operator abstract
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
-
 #include "condition_state.h"
 
 template <

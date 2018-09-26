@@ -2,7 +2,7 @@
 #include "base_monster.h"
 
 #include "../../../ai_object_location.h"
-#include "../../../game_graph.h"
+#include "../../../../xrAICore/../xrAICore/../xrAICore/game_graph.h"
 #include "../../../ai_space.h"
 #include "../../../hit.h"
 #include "../../../PHDestroyable.h"

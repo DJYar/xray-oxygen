@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "stalker_sound_data.h"
 #include "sound_user_data_visitor.h"
 #include "ai/stalker/ai_stalker.h"

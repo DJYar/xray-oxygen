@@ -4,8 +4,8 @@
 //	Author		: Alexander Dudin
 //	Description : Smart cover planner class
 ////////////////////////////////////////////////////////////////////////////
-
 #include "stdafx.h"
+#include "path_manager.h"
 #include "smart_cover_animation_planner.h"
 #include "script_game_object.h"
 

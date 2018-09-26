@@ -5,16 +5,15 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Action planner
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
-
-#include "problem_solver.h"
 #include "action_base.h"
 #include "property_evaluator.h"
 #include "property_storage.h"
+#include "../xrAICore/../xrAICore/problem_solver.h"
 #include "../xrScripts/export/script_export_space.h"
+#ifdef DEBUG
 #include "ai_debug.h"
-
+#endif
 class CScriptGameObject;
 
 template <

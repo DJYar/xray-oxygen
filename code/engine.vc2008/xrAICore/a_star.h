@@ -5,9 +5,7 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Implementation of the A* (a-star) algorithm
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
-
 #include "vertex_path.h"
 #include "data_storage_constructor.h"
 #include "dijkstra.h"

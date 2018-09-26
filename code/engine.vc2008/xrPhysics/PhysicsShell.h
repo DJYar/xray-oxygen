@@ -1,11 +1,9 @@
-#ifndef PhysicsShellH
-#define PhysicsShellH
 #pragma once
 
 #include "PHDefs.h"
 #include "PhysicsCommon.h"
 #include "icollidevalidator.h"
-#include "../xrserverentities/alife_space.h"
+#include "../xrAICore/alife_space.h"
 
 #include "../xrEngine/iphysicsshell.h"
 #include "iphysics_scripted.h"
@@ -418,4 +416,3 @@ bool				has_physics_collision_shapes(IKinematics& K);
 XRPHYSICS_API		void				phys_shell_verify_object_model(IPhysicsShellHolder& O);
 
 void				phys_shell_verify_model(IKinematics& K);
-#endif // PhysicsShellH

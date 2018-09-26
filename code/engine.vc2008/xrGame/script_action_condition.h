@@ -9,7 +9,7 @@
 #pragma once
 
 #include "../xrScripts/export/script_export_space.h"
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 
 class CScriptActionCondition {
 public:

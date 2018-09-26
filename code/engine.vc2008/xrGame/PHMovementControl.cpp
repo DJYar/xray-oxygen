@@ -2,7 +2,7 @@
 #include "phmovementcontrol.h"
 
 #include "../xrCDB/cl_intersect.h"
-#include "../xrserverentities/alife_space.h"
+#include "../xrserverentities/../xrAICore/alife_space.h"
 
 #include "../xrphysics/phCharacter.h"
 #include "../xrphysics/IPHCapture.h"

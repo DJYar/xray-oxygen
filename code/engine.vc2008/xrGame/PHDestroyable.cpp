@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "phdestroyable.h"
 #include "physicsshellholder.h"
 #include "xrMessages.h"
@@ -11,7 +11,7 @@
 #include "CharacterPhysicsSupport.h"
 #include "ai_object_location.h"
 #include "ai_space.h"
-#include "game_graph.h"
+#include "../xrAICore/../xrAICore/../xrAICore/game_graph.h"
 #include "../xrphysics/MathUtils.h"
 #ifdef DEBUG
 #include "../xrphysics/IPHWorld.h"

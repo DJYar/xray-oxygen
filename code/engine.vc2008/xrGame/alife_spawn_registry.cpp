@@ -11,7 +11,7 @@
 #include "object_broker.h"
 #include "game_base.h"
 #include "ai_space.h"
-#include "game_graph.h"
+#include "../xrAICore/../xrAICore/../xrAICore/game_graph.h"
 #include "../FrayBuildConfig.hpp"
 
 #pragma warning(push)

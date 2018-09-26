@@ -8,10 +8,10 @@
 
 #pragma once
 
-#include "game_graph_space.h"
+#include "../xrAICore/game_graph_space.h"
 #include "ai_space.h"
 #include "level_graph.h"
-#include "game_graph.h"
+#include "../xrAICore/../xrAICore/../xrAICore/game_graph.h"
 
 namespace LevelGraph {
 	class CVertex;

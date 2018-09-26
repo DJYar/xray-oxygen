@@ -11,7 +11,7 @@
 #include "xrServer_Objects_Abstract.h"
 #include "object_interfaces.h"
 #include "script_value_container.h"
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "../xrCore/client_id.h"
 
 class NET_Packet;

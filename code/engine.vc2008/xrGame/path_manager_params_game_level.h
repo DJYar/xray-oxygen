@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include "path_manager_params.h"
+#include "../xrAICore/path_manager_params.h"
 
 template <
 	typename _dist_type,

@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "stalker_velocity_holder.h"
 #include "object_broker.h"
 #include "stalker_velocity_collection.h"

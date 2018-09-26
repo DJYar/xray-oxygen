@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "memory_manager.h"
 #include "visual_memory_manager.h"
 #include "sound_memory_manager.h"

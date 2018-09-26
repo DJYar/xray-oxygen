@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include "graph_engine_space.h"
+#include "../xrAICore/graph_engine_space.h"
 #include "../xrScripts/export/script_export_space.h"
 
 using CScriptWorldProperty = GraphEngineSpace::CWorldProperty;

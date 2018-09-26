@@ -5,19 +5,19 @@
 //	Author		: Dmitriy Iassenev
 //	Description : ALife monster detail path manager class
 ////////////////////////////////////////////////////////////////////////////
-
 #include "stdafx.h"
+#include "path_manager.h"
 #include "alife_monster_detail_path_manager.h"
 #include "ai_space.h"
 #include "alife_simulator.h"
 #include "alife_time_manager.h"
 #include "xrServer_Objects_ALife_Monsters.h"
-#include "game_graph.h"
+#include "../xrAICore/../xrAICore/../xrAICore/game_graph.h"
 #include "level_graph.h"
-#include "game_level_cross_table.h"
+#include "../xrAICore/game_level_cross_table.h"
 #include "alife_smart_terrain_task.h"
 #include "alife_graph_registry.h"
-#include "graph_engine.h"
+#include "../xrAICore/graph_engine.h"
 #include "alife_monster_brain.h"
 
 CALifeMonsterDetailPathManager::CALifeMonsterDetailPathManager	(object_type *object)

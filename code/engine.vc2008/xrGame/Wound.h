@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "hit_immunity.h"
 
 class NET_Packet;

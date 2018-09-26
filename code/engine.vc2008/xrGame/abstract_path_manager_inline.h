@@ -5,11 +5,9 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Abstract path manager inline functions
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
-
 #include "ai_space.h"
-#include "graph_engine.h"
+#include "../xrAICore/graph_engine.h"
 
 #define TEMPLATE_SPECIALIZATION template <\
 	typename _Graph,\

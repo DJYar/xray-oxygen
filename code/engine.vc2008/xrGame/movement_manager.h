@@ -5,12 +5,10 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Movement manager
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
-
 #include "ai_monster_space.h"
-#include "graph_engine_space.h"
-#include "game_graph_space.h"
+#include "../xrAICore/graph_engine_space.h"
+#include "../xrAICore/game_graph_space.h"
 
 namespace MovementManager {
 	enum EPathType;

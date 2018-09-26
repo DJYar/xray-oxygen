@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include "game_graph.h"
+#include "../xrAICore/../xrAICore/../xrAICore/game_graph.h"
 #include "path_manager_params_game_level.h"
 
 template <

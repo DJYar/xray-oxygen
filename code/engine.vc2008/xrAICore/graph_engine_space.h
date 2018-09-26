@@ -75,7 +75,8 @@ namespace GraphEngineSpace {
 	typedef u32			_solver_condition_type;
 	typedef bool		_solver_value_type;
 
-	struct CSolverConditionValue {
+	struct CSolverConditionValue 
+	{
 		_solver_condition_type	m_condition;
 		_solver_value_type		m_value;
 

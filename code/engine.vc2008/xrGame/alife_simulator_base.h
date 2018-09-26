@@ -5,12 +5,10 @@
 //	Author		: Dmitriy Iassenev
 //	Description : ALife Simulator base class
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
-
-#include "random32.h"
-#include "../xrServerEntities/alife_space.h"
-#include "../xrServerEntities/game_graph_space.h"
+#include "../xrCore/random32.h"
+#include "../xrServerEntities/../xrAICore/alife_space.h"
+#include "../xrServerEntities/../xrAICore/game_graph_space.h"
 #include "../xrServerEntities/object_interfaces.h"
 
 class xrServer;

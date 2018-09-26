@@ -5,14 +5,8 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Cross table between game and level graphs
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
-
-#ifdef AI_COMPILER
-#	include "../../xrEngine/xrLevel.h"
-#else // AI_COMPILER
-#	include "../xrEngine/xrLevel.h"
-#endif // AI_COMPILER
+#include "../xrEngine/xrLevel.h"
 
 #include "alife_space.h"
 #include "game_graph_space.h"
@@ -22,7 +16,8 @@
 #define CROSS_TABLE_CHUNK_VERSION			0
 #define CROSS_TABLE_CHUNK_DATA				1
 
-class CGameLevelCrossTable {
+class CGameLevelCrossTable 
+{
 #ifdef AI_COMPILER		
 	friend class CLevelGameGraph;
 	friend class CCrossTableBuilder;
@@ -32,7 +27,8 @@ class CGameLevelCrossTable {
 
 public:
 #pragma pack(push,2)
-	class CHeader {
+	class CHeader 
+	{
 		u32					dwVersion;
 		u32					dwNodeCount;
 		u32					dwGraphPointCount;
@@ -54,7 +50,8 @@ public:
 #endif // AI_COMPILER
 	};
 	
-	class  CCell {
+	class  CCell 
+	{
 		GameGraph::_GRAPH_ID	tGraphIndex;
 		float				fDistance;
 	public:

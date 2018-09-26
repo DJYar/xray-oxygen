@@ -9,6 +9,7 @@
 #pragma warning(push)
 #pragma warning(disable: 4275)
 #define SCRIPT_REGISTRATOR
+#include "path_manager.h"
 #include "../xrScripts/export/script_export_space.h"
 #include "script_engine_export.h"
 #pragma warning(pop)

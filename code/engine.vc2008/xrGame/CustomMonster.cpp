@@ -16,7 +16,7 @@
 #include "item_manager.h"
 #include "danger_manager.h"
 #include "level_graph.h"
-#include "game_graph.h"
+#include "../xrAICore/../xrAICore/../xrAICore/game_graph.h"
 #include "movement_manager.h"
 #include "entitycondition.h"
 #include "sound_player.h"

@@ -7,8 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #pragma once
-
-#include "problem_solver.h"
+#include "../xrAICore/problem_solver.h"
 
 template <
 	typename T1,

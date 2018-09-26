@@ -7,7 +7,7 @@
 #include "../xrUICore/IGameUI.h"
 #include "../xrEngine/CustomHUD.h"
 #include "../xrUICore/UIDialogWnd.h"
-#include "game_graph_space.h"
+#include "../xrAICore/game_graph_space.h"
 
 // refs
 class CUI;

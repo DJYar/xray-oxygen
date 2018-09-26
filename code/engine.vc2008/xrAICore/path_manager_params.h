@@ -8,12 +8,9 @@
 
 #pragma once
 
-template <
-	typename _dist_type,
-	typename _index_type,
-	typename _iteration_type
->
-struct SBaseParameters {
+template <typename _dist_type, typename _index_type, typename _iteration_type>
+struct SBaseParameters 
+{
 	_dist_type		max_range;
 	_iteration_type	max_iteration_count;
 	u32				max_visited_node_count;

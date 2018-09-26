@@ -5,7 +5,7 @@
 #include "PHDebug.h"
 #include "../xrphysics/iphworld.h"
 #endif
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "hit.h"
 #include "PHDestroyable.h"
 #include "car.h"

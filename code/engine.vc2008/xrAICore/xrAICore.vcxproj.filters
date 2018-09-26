@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GameGraph">
+      <UniqueIdentifier>{e6547254-91c2-422c-8331-ad4f699d7553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{c0f44d85-21a5-4d24-9608-1550b6ba3597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\AssociativeVector">
+      <UniqueIdentifier>{6895817c-b7f3-4d29-ad39-9c31b2abd5ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kernel">
+      <UniqueIdentifier>{da9065ce-81ce-48a7-b1d8-0d41e0240c90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="alife">
+      <UniqueIdentifier>{3cbc4f6b-2d62-49b7-8f12-c928bc119fe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\AStar">
+      <UniqueIdentifier>{4e309981-bc14-4a31-b5ee-0bd286f30cd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\DijkStar">
+      <UniqueIdentifier>{33326a99-51c7-44ab-a91d-933e8fbe3512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vertex">
+      <UniqueIdentifier>{db0656f1-6dfe-439e-a761-3f6640198af6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vertex\Storage">
+      <UniqueIdentifier>{dfea1cde-7dab-44d4-bb0e-8d339681a655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameGraph\Engine">
+      <UniqueIdentifier>{962a810e-aec5-4d50-86d7-ed5ac90f5c71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameGraph\Engine\EdgePath">
+      <UniqueIdentifier>{b648d411-164f-4232-bb91-be16be08776e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameGraph\Game">
+      <UniqueIdentifier>{dca0a97c-3001-4470-8177-7bb0f6742a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vertex\Fixes">
+      <UniqueIdentifier>{dc8321b1-7698-4804-8885-612520ed3fc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vertex\Condition">
+      <UniqueIdentifier>{c7f85d82-4ea5-47fd-829d-6827c7eadb34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\Operators">
+      <UniqueIdentifier>{273c0d46-4a8b-4d35-b19c-2cdc6975041f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vertex\Storage\BuildelAllocator">
+      <UniqueIdentifier>{9f9f07de-a9ed-4fe0-bbcc-72e991084212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameGraph\Engine\ProblemSolver">
+      <UniqueIdentifier>{4eaac748-ede9-4199-8e72-48d4e6d64d0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Path">
+      <UniqueIdentifier>{8df78dae-027e-433a-a836-67e320fd5fe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI Space">
+      <UniqueIdentifier>{c8d4ef39-972e-45cf-ac18-4d6a037fa78e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="associative_vector_compare_predicate.h">
+      <Filter>utils\AssociativeVector</Filter>
+    </ClInclude>
+    <ClInclude Include="associative_vector_compare_predicate_inline.h">
+      <Filter>utils\AssociativeVector</Filter>
+    </ClInclude>
+    <ClInclude Include="associative_vector_inline.h">
+      <Filter>utils\AssociativeVector</Filter>
+    </ClInclude>
+    <ClInclude Include="associative_vector.h">
+      <Filter>utils\AssociativeVector</Filter>
+    </ClInclude>
+    <ClInclude Include="alife_space.h">
+      <Filter>alife</Filter>
+    </ClInclude>
+    <ClInclude Include="linker.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="ai_space_interface.h">
+      <Filter>AI Space</Filter>
+    </ClInclude>
+    <ClInclude Include="a_star_inline.h">
+      <Filter>utils\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="a_star.h">
+      <Filter>utils\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="dijkstra_inline.h">
+      <Filter>utils\DijkStar</Filter>
+    </ClInclude>
+    <ClInclude Include="dijkstra.h">
+      <Filter>utils\DijkStar</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex_path_inline.h">
+      <Filter>Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex_path.h">
+      <Filter>Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="data_storage_constructor.h">
+      <Filter>Vertex\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="graph_engine.h">
+      <Filter>GameGraph\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="graph_engine_inline.h">
+      <Filter>GameGraph\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="graph_engine_space.h">
+      <Filter>GameGraph\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="edge_path_inline.h">
+      <Filter>GameGraph\Engine\EdgePath</Filter>
+    </ClInclude>
+    <ClInclude Include="edge_path.h">
+      <Filter>GameGraph\Engine\EdgePath</Filter>
+    </ClInclude>
+    <ClInclude Include="game_graph.h">
+      <Filter>GameGraph\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="game_graph_inline.h">
+      <Filter>GameGraph\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="game_level_cross_table.h">
+      <Filter>GameGraph\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex_manager_fixed_inline.h">
+      <Filter>Vertex\Fixes</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex_manager_hash_fixed.h">
+      <Filter>Vertex\Fixes</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex_manager_hash_fixed_inline.h">
+      <Filter>Vertex\Fixes</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex_allocator_fixed.h">
+      <Filter>Vertex\Fixes</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex_allocator_fixed_inline.h">
+      <Filter>Vertex\Fixes</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex_manager_fixed.h">
+      <Filter>Vertex\Fixes</Filter>
+    </ClInclude>
+    <ClInclude Include="data_storage_binary_heap_inline.h">
+      <Filter>Vertex\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="data_storage_bucket_list.h">
+      <Filter>Vertex\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="data_storage_bucket_list_inline.h">
+      <Filter>Vertex\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="data_storage_binary_heap.h">
+      <Filter>Vertex\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="condition_state_inline.h">
+      <Filter>Vertex\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="condition_state.h">
+      <Filter>Vertex\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="operator_condition_inline.h">
+      <Filter>utils\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="operator_abstract.h">
+      <Filter>utils\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="operator_abstract_inline.h">
+      <Filter>utils\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="operator_condition.h">
+      <Filter>utils\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="manager_builder_allocator_constructor.h">
+      <Filter>Vertex\Storage\BuildelAllocator</Filter>
+    </ClInclude>
+    <ClInclude Include="manager_builder_allocator_constructor_inline.h">
+      <Filter>Vertex\Storage\BuildelAllocator</Filter>
+    </ClInclude>
+    <ClInclude Include="builder_allocator_constructor.h">
+      <Filter>Vertex\Storage\BuildelAllocator</Filter>
+    </ClInclude>
+    <ClInclude Include="data_storage_single_linked_list_inline.h">
+      <Filter>Vertex\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="data_storage_double_linked_list.h">
+      <Filter>Vertex\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="data_storage_double_linked_list_inline.h">
+      <Filter>Vertex\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="data_storage_single_linked_list.h">
+      <Filter>Vertex\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="problem_solver_inline.h">
+      <Filter>GameGraph\Engine\ProblemSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="problem_solver.h">
+      <Filter>GameGraph\Engine\ProblemSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="path_manager_params.h">
+      <Filter>Path</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="alife_space.cpp">
+      <Filter>alife</Filter>
+    </ClCompile>
+    <ClCompile Include="AISpace.cpp">
+      <Filter>AI Space</Filter>
+    </ClCompile>
+    <ClCompile Include="game_graph_script.cpp">
+      <Filter>GameGraph\Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

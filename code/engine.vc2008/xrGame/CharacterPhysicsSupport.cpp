@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "CharacterPhysicsSupport.h"
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "CustomMonster.h"
 #include "../Include/xrRender/KinematicsAnimated.h"
 #include "../xrphysics/PhysicsShell.h"

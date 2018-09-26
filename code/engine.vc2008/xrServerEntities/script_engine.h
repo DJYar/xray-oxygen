@@ -10,7 +10,7 @@
 #include "../xrScripts/export/script_export_space.h"
 #include "script_storage.h"
 #include "script_space_forward.h"
-#include "associative_vector.h"
+#include "../xrAICore/associative_vector.h"
 
 extern "C" {
 	#include <lua/lua.h>

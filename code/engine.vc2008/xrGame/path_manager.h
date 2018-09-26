@@ -5,9 +5,7 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Path manager
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
-
 #include "path_manager_generic.h"
 
 template <
@@ -30,7 +28,7 @@ template <
 };
 
 //		path manager parameters
-#include "path_manager_params.h"
+#include "../xrAICore/path_manager_params.h"
 #include "path_manager_params_flooder.h"
 #include "path_manager_params_straight_line.h"
 #ifndef AI_COMPILER

@@ -7,6 +7,7 @@
 
 #include "stdafx.h"
 #include "smart_cover_planner_actions.h"
+#include "path_manager.h"
 #include "script_game_object.h"
 
 #include "ai/stalker/ai_stalker.h"

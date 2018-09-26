@@ -6,6 +6,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "smart_cover_planner_target_selector.h"
 #include "smart_cover_animation_planner.h"
 #include "script_game_object.h"

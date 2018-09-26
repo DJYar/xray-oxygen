@@ -125,12 +125,7 @@ IC	void CProblemSolverAbstract::remove_operator		(const _edge_type &operator_id)
 {
 	OPERATOR_VECTOR::iterator	I = std::lower_bound(m_operators.begin(), m_operators.end(),operator_id);
 	THROW						(m_operators.end() != I);
-	try {
-		delete_data				((*I).m_operator);
-	}
-	catch(...) {
-		(*I).m_operator			= 0;
-	}
+	(*I).m_operator			= 0;
 	m_actuality					= false;
 	m_operators.erase			(I);
 }
@@ -169,18 +164,13 @@ IC	void CProblemSolverAbstract::add_evaluator				(const _condition_type &conditi
 }
 
 TEMPLATE_SPECIALIZATION
-IC	void CProblemSolverAbstract::remove_evaluator			(const _condition_type &condition_id)
+IC	void CProblemSolverAbstract::remove_evaluator(const _condition_type &condition_id)
 {
-	EVALUATORS::iterator		I = m_evaluators.find(condition_id);
-	THROW						(I != m_evaluators.end());
-	try {
-		delete_data				((*I).second);
-	}
-	catch(...) {
-		(*I).second				= 0;
-	}
-	m_evaluators.erase			(I);
-	m_actuality					= false;
+	EVALUATORS::iterator I = m_evaluators.find(condition_id);
+	THROW(I != m_evaluators.end());
+	(*I).second = 0;
+	m_evaluators.erase(I);
+	m_actuality = false;
 }
 
 TEMPLATE_SPECIALIZATION
@@ -363,18 +353,9 @@ IC	void CProblemSolverAbstract::solve			()
 	m_solution_changed			= true;
 	m_current_state.clear		();
 	
-	m_failed					= !
-		ai().graph_engine().search(
-			*this,
-			reverse_search ? target_state() : current_state(),
-			reverse_search ? current_state() : target_state(),
-			&m_solution,
-			GraphEngineSpace::CSolverBaseParameters(
-				GraphEngineSpace::_solver_dist_type(-1),
-				GraphEngineSpace::_solver_condition_type(-1),
-				8000
-			)
-		);
+	m_failed = !g_ai_space->graph_engine().search(*this, 
+		reverse_search ? target_state() : current_state(), reverse_search ? current_state() : target_state(), &m_solution,
+			GraphEngineSpace::CSolverBaseParameters(GraphEngineSpace::_solver_dist_type(-1), GraphEngineSpace::_solver_condition_type(-1), 8000));
 #endif
 }
 

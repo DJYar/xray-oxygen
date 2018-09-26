@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{382C00A1-0FC2-4872-9EEC-815D7A314D8D}</ProjectGuid>
+    <RootNamespace>xrAICore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\F-Ray.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\F-Ray.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>AICORE_BUILD;_ITERATOR_DEBUG_LEVEL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImportLibrary>$(xrLib)$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>xrCore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PreprocessorDefinitions>AICORE_BUILD;_ITERATOR_DEBUG_LEVEL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>xrCore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ai_space_interface.h" />
+    <ClInclude Include="alife_space.h" />
+    <ClInclude Include="associative_vector.h" />
+    <ClInclude Include="associative_vector_compare_predicate.h" />
+    <ClInclude Include="associative_vector_compare_predicate_inline.h" />
+    <ClInclude Include="associative_vector_inline.h" />
+    <ClInclude Include="a_star.h" />
+    <ClInclude Include="a_star_inline.h" />
+    <ClInclude Include="builder_allocator_constructor.h" />
+    <ClInclude Include="condition_state.h" />
+    <ClInclude Include="condition_state_inline.h" />
+    <ClInclude Include="data_storage_binary_heap.h" />
+    <ClInclude Include="data_storage_binary_heap_inline.h" />
+    <ClInclude Include="data_storage_bucket_list.h" />
+    <ClInclude Include="data_storage_bucket_list_inline.h" />
+    <ClInclude Include="data_storage_constructor.h" />
+    <ClInclude Include="data_storage_double_linked_list.h" />
+    <ClInclude Include="data_storage_double_linked_list_inline.h" />
+    <ClInclude Include="data_storage_single_linked_list.h" />
+    <ClInclude Include="data_storage_single_linked_list_inline.h" />
+    <ClInclude Include="dijkstra.h" />
+    <ClInclude Include="dijkstra_inline.h" />
+    <ClInclude Include="edge_path.h" />
+    <ClInclude Include="edge_path_inline.h" />
+    <ClInclude Include="game_graph.h" />
+    <ClInclude Include="game_graph_inline.h" />
+    <ClInclude Include="game_level_cross_table.h" />
+    <ClInclude Include="graph_engine.h" />
+    <ClInclude Include="graph_engine_inline.h" />
+    <ClInclude Include="graph_engine_space.h" />
+    <ClInclude Include="linker.h" />
+    <ClInclude Include="manager_builder_allocator_constructor.h" />
+    <ClInclude Include="manager_builder_allocator_constructor_inline.h" />
+    <ClInclude Include="operator_abstract.h" />
+    <ClInclude Include="operator_abstract_inline.h" />
+    <ClInclude Include="operator_condition.h" />
+    <ClInclude Include="operator_condition_inline.h" />
+    <ClInclude Include="path_manager_params.h" />
+    <ClInclude Include="problem_solver.h" />
+    <ClInclude Include="problem_solver_inline.h" />
+    <ClInclude Include="vertex_allocator_fixed.h" />
+    <ClInclude Include="vertex_allocator_fixed_inline.h" />
+    <ClInclude Include="vertex_manager_fixed.h" />
+    <ClInclude Include="vertex_manager_fixed_inline.h" />
+    <ClInclude Include="vertex_manager_hash_fixed.h" />
+    <ClInclude Include="vertex_manager_hash_fixed_inline.h" />
+    <ClInclude Include="vertex_path.h" />
+    <ClInclude Include="vertex_path_inline.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Mixed|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_IA32|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="AISpace.cpp" />
+    <ClCompile Include="alife_space.cpp" />
+    <ClCompile Include="game_graph_script.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

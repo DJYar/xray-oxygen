@@ -11,8 +11,8 @@
 
 #include "stdafx.h"
 #include "xrServer_Objects.h"
-#include "alife_space.h"
-#include "game_graph_space.h"
+#include "../xrAICore/alife_space.h"
+#include "../xrAICore/game_graph_space.h"
 #ifdef XRGAME_EXPORTS
 #include "alife_smart_terrain_task.h"
 #endif //#ifdef XRGAME_EXPORTS

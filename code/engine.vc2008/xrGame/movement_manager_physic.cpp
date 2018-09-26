@@ -8,6 +8,7 @@
 
 #include "stdafx.h"
 #include "movement_manager.h"
+#include "path_manager.h"
 #include "PHMovementControl.h"
 #include "detail_path_manager.h"
 #include "level.h"

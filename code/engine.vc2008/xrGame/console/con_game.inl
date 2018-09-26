@@ -302,7 +302,7 @@ public:
 	  }
 };
 
-#include "game_graph.h"
+#include "../../xrAICore/game_graph.h"
 struct CCC_JumpToLevel : public IConsole_Command {
 	CCC_JumpToLevel(LPCSTR N) : IConsole_Command(N)  {};
 

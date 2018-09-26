@@ -4,8 +4,8 @@
 //	Author		: Alexander Dudin
 //	Description : Default behaviour planner for target selector
 ////////////////////////////////////////////////////////////////////////////
-
 #include "stdafx.h"
+#include "path_manager.h"
 #include "smart_cover_default_behaviour_planner.hpp"
 #include "script_game_object.h"
 #include "smart_cover_animation_planner.h"

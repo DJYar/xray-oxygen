@@ -17,14 +17,14 @@
 #include "ef_storage.h"
 #include "xrserver.h"
 #include "level.h"
-#include "graph_engine.h"
+#include "path_manager.h"
+#include "../xrAICore/graph_engine.h"
 #include "../xrEngine/x_ray.h"
 #include "restriction_space.h"
 #include "profiler.h"
 #include "GamePersistent.h"
 
 #ifdef DEBUG
-#include "ai_space.h"
 #include "script_engine.h"
 #endif
 

@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "stalker_get_distance_planner.h"
 #include "ai/stalker/ai_stalker_space.h"
 #include "stalker_decision_space.h"

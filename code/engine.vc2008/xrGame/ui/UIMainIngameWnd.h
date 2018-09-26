@@ -2,7 +2,7 @@
 #include "..\xrUICore\UIWindow.h"
 
 #include "../hudsound.h"
-#include "../../xrServerEntities/alife_space.h"
+#include "../../xrServerEntities/../xrAICore/alife_space.h"
 #include "../EntityCondition.h"
 
 class	CUIZoneMap;

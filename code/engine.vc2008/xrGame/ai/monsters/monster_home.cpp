@@ -9,7 +9,7 @@
 #include "monster_cover_manager.h"
 #include "../../ai_object_location.h"
 #include "../../restricted_object.h"
-#	include "../../game_graph.h"
+#	include "../../../xrAICore/../xrAICore/../xrAICore/game_graph.h"
 
 #ifdef _DEBUG
 

@@ -10,7 +10,7 @@
 
 #include "GameObject.h"
 #include "../xrEngine/feel_touch.h"
-#include "game_graph_space.h"
+#include "../xrAICore/game_graph_space.h"
 #include "../xrUICore/UIDialogWnd.h"
 #include "../xrUICore/UIMessageBox.h"
 

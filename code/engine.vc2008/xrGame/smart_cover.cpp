@@ -13,7 +13,7 @@
 #include "smart_cover_action.h"
 #include "ai_space.h"
 #include "level_graph.h"
-#include "graph_engine.h"
+#include "../xrAICore/graph_engine.h"
 #include <luabind/luabind.hpp>
 
 namespace hash_fixed_vertex_manager {

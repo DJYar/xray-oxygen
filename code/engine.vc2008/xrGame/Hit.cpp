@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "hit.h"
 #include "../xrEngine/bone.h"
 #include "xrMessages.h"

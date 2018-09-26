@@ -5,6 +5,7 @@
 #include "stdafx.h"
 #include "luabind/luabind.hpp"
 #include "script_game_object.h"
+#include "path_manager.h"
 #include "ai_space.h"
 #include "script_engine.h"
 #include "ai/trader/ai_trader.h"

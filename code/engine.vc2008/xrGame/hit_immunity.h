@@ -2,7 +2,7 @@
 //				   коэффициенты иммунитета для разных типов хитов
 //////////////////////////////////////////////////////////////////////
 #pragma once
-#include "../xrServerEntities/alife_space.h"
+#include "../xrServerEntities/../xrAICore/alife_space.h"
 
 namespace HitImmunity
 {

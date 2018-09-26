@@ -1975,7 +1975,7 @@ bool CCar::isActiveEngine()
 	return b_engine_on;
 }
 /*************************************************** added by Ray Twitty (aka Shadows) END ***************************************************/
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "hit.h"
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 CCar::SExhaust::~SExhaust()

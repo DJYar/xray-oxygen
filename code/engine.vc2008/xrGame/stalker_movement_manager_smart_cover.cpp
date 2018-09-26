@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "stalker_movement_manager_smart_cover.h"
 #include "movement_manager_space.h"
 #include "smart_cover_animation_selector.h"

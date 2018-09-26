@@ -4,8 +4,8 @@
 //	Author		: Alexander Dudin
 //	Description : Target provider for target selector
 ////////////////////////////////////////////////////////////////////////////
-
 #include "stdafx.h"
+#include "path_manager.h"
 #include "smart_cover_planner_target_provider.h"
 #include "script_game_object.h"
 #include "smart_cover_animation_planner.h"

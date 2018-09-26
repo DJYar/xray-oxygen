@@ -5,56 +5,55 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Game graph class script export
 ////////////////////////////////////////////////////////////////////////////
-
 #include "stdafx.h"
 #include "game_graph.h"
-#include "ai_space.h"
+#include "ai_space_interface.h"
 
-#include "luabind/luabind.hpp"
+#include <luabind/luabind.hpp>
 using namespace luabind;
 
-const CGameGraph *get_game_graph		()
+const CGameGraph *get_game_graph()
 {
-	return				(&ai().game_graph());
+	return &(g_ai_space->game_graph());
 }
 
-const CGameGraph::CHeader *get_header	(const CGameGraph *self)
+const CGameGraph::CHeader *get_header(const CGameGraph *self)
 {
-	return				(&self->header());
+	return (&self->header());
 }
 
-bool get_accessible1					(const CGameGraph *self, const u32 &vertex_id)
+bool get_accessible1(const CGameGraph *self, const u32 &vertex_id)
 {
-	return				(self->accessible(vertex_id));
+	return (self->accessible(vertex_id));
 }
 
-void get_accessible2					(const CGameGraph *self, const u32 &vertex_id, bool value)
+void get_accessible2(const CGameGraph *self, const u32 &vertex_id, bool value)
 {
-	self->accessible	(vertex_id,value);
+	self->accessible(vertex_id, value);
 }
 
-Fvector CVertex__level_point			(const CGameGraph::CVertex *vertex)
+Fvector CVertex__level_point(const CGameGraph::CVertex *vertex)
 {
-	THROW				(vertex);
-	return				(vertex->level_point());
+	VERIFY(vertex);
+	return (vertex->level_point());
 }
 
-Fvector CVertex__game_point				(const CGameGraph::CVertex *vertex)
+Fvector CVertex__game_point(const CGameGraph::CVertex *vertex)
 {
-	THROW				(vertex);
-	return				(vertex->game_point());
+	VERIFY(vertex);
+	return (vertex->game_point());
 }
 
-GameGraph::LEVEL_MAP const& get_levels	( CGameGraph const* graph )
+GameGraph::LEVEL_MAP const& get_levels(CGameGraph const* graph)
 {
-	THROW				(graph);
-	return				graph->header().levels();
+	VERIFY(graph);
+	return graph->header().levels();
 }
 
-#include "../../SDK/include/luabind/iterator_policy.hpp"
+#include <luabind/iterator_policy.hpp>
 
 #pragma optimize("s",on)
-void CGameGraph::script_register		(lua_State *L)
+void CGameGraph::script_register(lua_State *L)
 {
 	module(L)
 	[

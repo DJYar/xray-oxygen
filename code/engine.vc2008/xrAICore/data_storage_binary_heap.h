@@ -5,10 +5,10 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Binary heap data storage
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
 
-struct CDataStorageBinaryHeap {
+struct CDataStorageBinaryHeap 
+{
 
 	template <
 		typename _data_storage,

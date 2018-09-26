@@ -1,5 +1,5 @@
 #pragma once
-#include "../xrServerEntities/alife_space.h"
+#include "../xrServerEntities/../xrAICore/alife_space.h"
 #include "../xrServerEntities/gametype_chooser.h"
 #pragma pack(push,1)
 class NET_Packet;

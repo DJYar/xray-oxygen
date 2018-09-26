@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "stalker_planner.h"
 #include "stalker_property_evaluators.h"
 #include "stalker_danger_property_evaluators.h"

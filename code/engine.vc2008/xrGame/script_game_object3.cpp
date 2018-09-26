@@ -8,7 +8,9 @@
 
 #include "stdafx.h"
 #include "script_game_object.h"
+#include "path_manager.h"
 
+#include "level_graph.h"
 #include "ai_space.h"
 #include "script_engine.h"
 #include "cover_evaluators.h"

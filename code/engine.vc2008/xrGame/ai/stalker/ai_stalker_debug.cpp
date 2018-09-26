@@ -9,6 +9,7 @@
 #include "stdafx.h"
 
 #ifdef DEBUG
+#include "path_manager.h"
 #include "ai_stalker.h"
 #include "../../memory_manager.h"
 #include "../../visual_memory_manager.h"

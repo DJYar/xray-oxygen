@@ -16,7 +16,7 @@
 #define CVertexPathBuilder		CVertexPath<bEuclidianHeuristics>::CDataStorage<_vertex>
 
 TEMPLATE_SPECIALIZATION
-IC	CVertexPathBuilder::CDataStorage			(const u32 vertex_count)
+inline	CVertexPathBuilder::CDataStorage			(const u32 vertex_count)
 {
 }
 
@@ -26,31 +26,31 @@ CVertexPathBuilder::~CDataStorage				()
 }
 
 TEMPLATE_SPECIALIZATION
-IC	void CVertexPathBuilder::init				()
+inline	void CVertexPathBuilder::init				()
 {
 }
 
 TEMPLATE_SPECIALIZATION
-IC	void CVertexPathBuilder::assign_parent	(CGraphVertex	&neighbour, CGraphVertex *parent)
+inline	void CVertexPathBuilder::assign_parent	(CGraphVertex	&neighbour, CGraphVertex *parent)
 {
 	neighbour.back()		= parent;
 }
 
 TEMPLATE_SPECIALIZATION
 template <typename T>
-IC	void CVertexPathBuilder::assign_parent	(CGraphVertex	&neighbour, CGraphVertex *parent, const T&)
+inline	void CVertexPathBuilder::assign_parent	(CGraphVertex	&neighbour, CGraphVertex *parent, const T&)
 {
 	assign_parent			(neighbour,parent);
 }
 
 TEMPLATE_SPECIALIZATION
-IC	void CVertexPathBuilder::update_successors(CGraphVertex &tpNeighbour)
+inline	void CVertexPathBuilder::update_successors(CGraphVertex &tpNeighbour)
 {
 	NODEFAULT;
 }
 
 TEMPLATE_SPECIALIZATION
-IC	void CVertexPathBuilder::get_node_path	(xr_vector<_index_type> &path, CGraphVertex *best)
+inline	void CVertexPathBuilder::get_node_path	(xr_vector<_index_type> &path, CGraphVertex *best)
 {
 	CGraphVertex			*t1 = best, *t2 = best->back();
     u32 i = 1;

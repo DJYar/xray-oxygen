@@ -7,9 +7,9 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "luabind/luabind.hpp"
+#include "path_manager.h"
 #include "script_game_object.h"
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "script_entity_space.h"
 #include "movement_manager_space.h"
 #include "pda_space.h"
@@ -28,8 +28,8 @@
 #include "danger_object.h"
 #include "smart_cover_object.h"
 
-#include "../../SDK/include/luabind/adopt_policy.hpp"
-#include "luabind/luabind.hpp"
+#include <luabind/luabind.hpp>
+#include <luabind/adopt_policy.hpp>
 using namespace luabind;
 
 extern CScriptActionPlanner *script_action_planner(CScriptGameObject *obj);

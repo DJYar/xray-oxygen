@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "stalker_danger_property_evaluators.h"
 #include "ai/stalker/ai_stalker.h"
 #include "script_game_object.h"

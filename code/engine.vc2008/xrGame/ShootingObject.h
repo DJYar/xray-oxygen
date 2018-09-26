@@ -4,7 +4,7 @@
 //					 обеспечивает набор хитов, звуков рикошетп
 //////////////////////////////////////////////////////////////////////
 #pragma once
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "../xrEngine/render.h"
 #include "../xrParticles/psystem.h"
 #include "../xrParticles/particlesobject.h"

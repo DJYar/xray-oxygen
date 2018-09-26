@@ -5,7 +5,7 @@
 //	Description : UI actor state window class
 ////////////////////////////////////////////////////////////////////////////
 #pragma once
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "../xrUICore/UIHint.h"
 
 class CUIProgressBar;

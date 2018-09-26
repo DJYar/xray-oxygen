@@ -14,7 +14,7 @@ class CGameLevelCrossTable;
 class CGameGraph;
 
 #include "object_interfaces.h"
-#include "game_graph_space.h"
+#include "../xrAICore/game_graph_space.h"
 
 class CPatrolPoint : public IPureSerializeObject<IReader,IWriter> {
 protected:

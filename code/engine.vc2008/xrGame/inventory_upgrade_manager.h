@@ -9,7 +9,7 @@
 #ifndef INVENTORY_UPGRADE_MANAGER_H_INCLUDED
 #define INVENTORY_UPGRADE_MANAGER_H_INCLUDED
 
-#include "associative_vector.h"
+#include "../xrAICore/associative_vector.h"
 #include "inventory_item_object.h"
 
 #include "inventory_upgrade_base.h"

@@ -8,7 +8,7 @@
 #include "smart_cover_detail.h"
 #include "script_space_forward.h"
 #include "ai_monster_space.h"
-#include "associative_vector.h"
+#include "../xrAICore/associative_vector.h"
 
 namespace smart_cover{
 

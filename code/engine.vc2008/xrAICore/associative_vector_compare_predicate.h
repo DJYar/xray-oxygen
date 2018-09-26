@@ -5,15 +5,16 @@
 //	Author		: Dmitriy Iassenev
 //	Description : associative vector compare predicate template class
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
+#include "linker.h"
 
 template <
 	typename _key_type,
 	typename _data_type,
 	typename _compare_predicate_type
 >
-class associative_vector_compare_predicate : public _compare_predicate_type {
+class AI_API associative_vector_compare_predicate : public _compare_predicate_type
+{
 private:
 	using inherited = _compare_predicate_type;
 

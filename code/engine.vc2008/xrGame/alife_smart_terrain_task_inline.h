@@ -8,7 +8,7 @@
 
 #pragma once
 #include "ai_space.h"
-#include "game_graph.h"
+#include "../xrAICore/../xrAICore/../xrAICore/game_graph.h"
 
 IC	CALifeSmartTerrainTask::CALifeSmartTerrainTask				(LPCSTR patrol_path_name)
 {

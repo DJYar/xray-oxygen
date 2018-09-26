@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "stalker_anomaly_planner.h"
 #include "stalker_anomaly_actions.h"
 #include "stalker_decision_space.h"

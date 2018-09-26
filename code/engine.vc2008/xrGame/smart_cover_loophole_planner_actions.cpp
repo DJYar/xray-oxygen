@@ -6,6 +6,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "smart_cover_loophole_planner_actions.h"
 #include "script_game_object.h"
 

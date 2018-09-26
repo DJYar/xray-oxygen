@@ -2,7 +2,7 @@
 
 #include "PHCommander.h"
 #include "PHReqComparer.h"
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "../xrScripts/export/script_export_space.h"
 class IPhysicsShellEx;
 class CPHCallOnStepCondition:

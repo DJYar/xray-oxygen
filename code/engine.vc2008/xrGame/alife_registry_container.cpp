@@ -9,7 +9,7 @@
 #include "stdafx.h"
 #include "alife_registry_container.h"
 #include "object_interfaces.h"
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "object_type_traits.h"
 
 template <typename List, typename Handler>

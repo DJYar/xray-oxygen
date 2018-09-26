@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "stalker_movement_params.h"
 #include "ai_monster_space.h"
 #include "movement_manager_space.h"

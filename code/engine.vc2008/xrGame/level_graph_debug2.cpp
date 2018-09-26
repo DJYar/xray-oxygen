@@ -13,7 +13,7 @@
 #include "../xrEngine/customhud.h"
 #include "ai_space.h"
 #include "ui_base.h"
-#include "game_graph.h"
+#include "../xrAICore/../xrAICore/../xrAICore/game_graph.h"
 #include "game_sv_base.h"
 #include "custommonster.h"
 #include "ai/stalker/ai_stalker.h"
@@ -36,7 +36,7 @@
 #include "level.h"
 #include "ai_object_location.h"
 #include "movement_manager.h"
-#include "graph_engine.h"
+#include "../xrAICore/graph_engine.h"
 #include "debug_renderer.h"
 #include "smart_cover_object.h"
 

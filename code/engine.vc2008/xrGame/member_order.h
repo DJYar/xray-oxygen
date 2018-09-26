@@ -10,27 +10,29 @@
 
 #include "agent_manager_space.h"
 #include "stalker_decision_space.h"
-#include "graph_engine_space.h"
-#include "condition_state.h"
+#include "../xrAICore/graph_engine_space.h"
+#include "../xrAICore/condition_state.h"
 
 class CAI_Stalker;
 class CCoverPoint;
 class CExplosive;
 class CGameObject;
 
-class CMemberOrder {
+class CMemberOrder 
+{
 public:
-	struct CMemberDeathReaction {
-		CAI_Stalker				*m_member;
-		u32						m_time;
-		bool					m_processing;
+	struct CMemberDeathReaction 
+	{
+		CAI_Stalker* m_member;
+		u32			 m_time;
+		bool		 m_processing;
 
-		IC			CMemberDeathReaction()
+		IC CMemberDeathReaction()
 		{
-			clear				();
+			clear();
 		}
 
-		IC	void	clear				()
+		IC void clear()
 		{
 			m_member			= 0;
 			m_time				= 0;
@@ -38,7 +40,8 @@ public:
 		}
 	};
 
-	struct CGrenadeReaction {
+	struct CGrenadeReaction 
+	{
 		const CExplosive		*m_grenade;
 		const CGameObject		*m_game_object;
 		u32						m_time;

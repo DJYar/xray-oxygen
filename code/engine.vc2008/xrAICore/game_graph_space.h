@@ -5,19 +5,18 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Game graph namespace
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
-
 #include "associative_vector.h"
-
 #include "../xrEngine/xrLevel.h"
 
-namespace GameGraph {
+namespace GameGraph 
+{
 	typedef u16	_GRAPH_ID;
 	typedef u8	_LEVEL_ID;
 	typedef u8	_LOCATION_ID;
 
-	enum {
+	enum 
+	{
 		LOCATION_TYPE_COUNT = 4,
 		LOCATION_COUNT		= (u32(1) << (8*sizeof(_LOCATION_ID))),
 	};

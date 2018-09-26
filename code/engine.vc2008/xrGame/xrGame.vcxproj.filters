@@ -1159,12 +1159,6 @@
     <Filter Include="AI\ANavigation">
       <UniqueIdentifier>{318a0126-a687-4153-acab-c50fcd670e05}</UniqueIdentifier>
     </Filter>
-    <Filter Include="AI\ANavigation\GameGraph">
-      <UniqueIdentifier>{b1d285a4-ef0a-40b1-a7f0-fff113cf6375}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="AI\ANavigation\GameLevelCrossTable">
-      <UniqueIdentifier>{0278e376-b803-406a-a42a-6e26bdbd5453}</UniqueIdentifier>
-    </Filter>
     <Filter Include="AI\ANavigation\GraphAbstract">
       <UniqueIdentifier>{e28c22d7-77b4-42a1-a3e0-4ba14d753d16}</UniqueIdentifier>
     </Filter>
@@ -1183,26 +1177,8 @@
     <Filter Include="AI\ANavigation\Pathfinding">
       <UniqueIdentifier>{20dd8a24-2745-4fe1-b455-48600e62857f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="AI\ANavigation\Pathfinding\Algorithms">
-      <UniqueIdentifier>{fcb22531-c5cb-404b-9c3c-3b264991568f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="AI\ANavigation\Pathfinding\Algorithms\A%2a">
-      <UniqueIdentifier>{04e092cd-17ec-4fa3-aa2d-293aecb9b84f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="AI\ANavigation\Pathfinding\Algorithms\Dijkstra">
-      <UniqueIdentifier>{7700a731-d889-4fa8-8cae-d66a9bbd6efc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="AI\ANavigation\Pathfinding\DataStorages">
       <UniqueIdentifier>{41ae73c5-3e29-442f-8469-8a6e55cc9dfb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="AI\ANavigation\Pathfinding\DataStorages\constructors">
-      <UniqueIdentifier>{3edd0270-c8da-49f5-841b-e1096e017d2f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="AI\ANavigation\Pathfinding\DataStorages\constructors\builder_allocator">
-      <UniqueIdentifier>{c91ce9de-f0cf-420d-aa8b-ff1a33043611}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="AI\ANavigation\Pathfinding\DataStorages\constructors\manager_builder_allocator">
-      <UniqueIdentifier>{0e42a698-9d29-489b-bd30-c2fe408905c6}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\ANavigation\Pathfinding\DataStorages\path_builders">
       <UniqueIdentifier>{eb2c44fa-ae1c-432d-924a-0a0f4c695d2f}</UniqueIdentifier>
@@ -1680,9 +1656,6 @@
     </Filter>
     <Filter Include="Core\Common\Random\weighted">
       <UniqueIdentifier>{be784214-fe7e-4329-8af9-691dd2d902fb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Core\Common\Random\32bit">
-      <UniqueIdentifier>{d0f2bfd6-6e90-4bba-bedc-8502b9e0d51e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Common\Shared">
       <UniqueIdentifier>{954af4d9-ed48-4067-a01f-0e7c341f276e}</UniqueIdentifier>
@@ -2593,9 +2566,6 @@
       <Filter>AI\AGroup\agent_manager\agent_planner\properties</Filter>
     </ClInclude>
     <ClInclude Include="alife_simulator.h">
-      <Filter>AI\ALife</Filter>
-    </ClInclude>
-    <ClInclude Include="..\xrServerEntities\alife_space.h">
       <Filter>AI\ALife</Filter>
     </ClInclude>
     <ClInclude Include="alife_simulator_base.h">
@@ -4137,21 +4107,6 @@
     <ClInclude Include="stalker_sound_data_inline.h">
       <Filter>AI\AMonsters\humans\stalker\SoundUserData</Filter>
     </ClInclude>
-    <ClInclude Include="game_graph.h">
-      <Filter>AI\ANavigation\GameGraph</Filter>
-    </ClInclude>
-    <ClInclude Include="game_graph_inline.h">
-      <Filter>AI\ANavigation\GameGraph</Filter>
-    </ClInclude>
-    <ClInclude Include="..\xrServerEntities\game_graph_space.h">
-      <Filter>AI\ANavigation\GameGraph</Filter>
-    </ClInclude>
-    <ClInclude Include="game_level_cross_table.h">
-      <Filter>AI\ANavigation\GameLevelCrossTable</Filter>
-    </ClInclude>
-    <ClInclude Include="game_level_cross_table_inline.h">
-      <Filter>AI\ANavigation\GameLevelCrossTable</Filter>
-    </ClInclude>
     <ClInclude Include="graph_edge.h">
       <Filter>AI\ANavigation\GraphAbstract\GraphEdge</Filter>
     </ClInclude>
@@ -4181,30 +4136,6 @@
     </ClInclude>
     <ClInclude Include="ai_object_location_inline.h">
       <Filter>AI\ANavigation\ObjectLocation</Filter>
-    </ClInclude>
-    <ClInclude Include="a_star.h">
-      <Filter>AI\ANavigation\Pathfinding\Algorithms\A%2a</Filter>
-    </ClInclude>
-    <ClInclude Include="a_star_inline.h">
-      <Filter>AI\ANavigation\Pathfinding\Algorithms\A%2a</Filter>
-    </ClInclude>
-    <ClInclude Include="dijkstra.h">
-      <Filter>AI\ANavigation\Pathfinding\Algorithms\Dijkstra</Filter>
-    </ClInclude>
-    <ClInclude Include="dijkstra_inline.h">
-      <Filter>AI\ANavigation\Pathfinding\Algorithms\Dijkstra</Filter>
-    </ClInclude>
-    <ClInclude Include="data_storage_constructor.h">
-      <Filter>AI\ANavigation\Pathfinding\DataStorages\constructors</Filter>
-    </ClInclude>
-    <ClInclude Include="builder_allocator_constructor.h">
-      <Filter>AI\ANavigation\Pathfinding\DataStorages\constructors\builder_allocator</Filter>
-    </ClInclude>
-    <ClInclude Include="manager_builder_allocator_constructor.h">
-      <Filter>AI\ANavigation\Pathfinding\DataStorages\constructors\manager_builder_allocator</Filter>
-    </ClInclude>
-    <ClInclude Include="manager_builder_allocator_constructor_inline.h">
-      <Filter>AI\ANavigation\Pathfinding\DataStorages\constructors\manager_builder_allocator</Filter>
     </ClInclude>
     <ClInclude Include="edge_path.h">
       <Filter>AI\ANavigation\Pathfinding\DataStorages\path_builders\edge_path</Filter>
@@ -5181,9 +5112,6 @@
     <ClInclude Include="ai\weighted_random.h">
       <Filter>Core\Common\Random\weighted</Filter>
     </ClInclude>
-    <ClInclude Include="random32.h">
-      <Filter>Core\Common\Random\32bit</Filter>
-    </ClInclude>
     <ClInclude Include="..\xrServerEntities\shared_data.h">
       <Filter>Core\Common\Shared</Filter>
     </ClInclude>
@@ -5865,9 +5793,6 @@
       <Filter>AI\AGroup\agent_manager\agent_planner\properties</Filter>
     </ClCompile>
     <ClCompile Include="alife_simulator.cpp">
-      <Filter>AI\ALife</Filter>
-    </ClCompile>
-    <ClCompile Include="..\xrServerEntities\alife_space.cpp">
       <Filter>AI\ALife</Filter>
     </ClCompile>
     <ClCompile Include="alife_simulator_base.cpp">
@@ -6692,9 +6617,6 @@
     <ClCompile Include="ai\stalker\ai_stalker_script_entity.cpp">
       <Filter>AI\AMonsters\humans\stalker\Miscellaneous</Filter>
     </ClCompile>
-    <ClCompile Include="game_graph_script.cpp">
-      <Filter>AI\ANavigation\GameGraph</Filter>
-    </ClCompile>
     <ClCompile Include="level_graph.cpp">
       <Filter>AI\ANavigation\LevelGraph</Filter>
     </ClCompile>
@@ -7402,9 +7324,6 @@
     </ClCompile>
     <ClCompile Include="ai\weighted_random.cpp">
       <Filter>Core\Common\Random\weighted</Filter>
-    </ClCompile>
-    <ClCompile Include="random32.cpp">
-      <Filter>Core\Common\Random\32bit</Filter>
     </ClCompile>
     <ClCompile Include="xrGame.cpp">
       <Filter>Core\Server</Filter>

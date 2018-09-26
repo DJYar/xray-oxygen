@@ -158,8 +158,6 @@ CLevel::CLevel() :IPureClient(Device.GetTimerGlobal())
 	thread_spawn(mtLevelScriptUpdater, "X-Ray: Level Script Update", 0, this);
 }
 
-extern CAI_Space *g_ai_space;
-
 CLevel::~CLevel()
 {
 	g_pGameLevel = nullptr;

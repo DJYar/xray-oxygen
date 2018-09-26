@@ -7,7 +7,6 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #pragma once
-
 #include "a_star.h"
 #include "edge_path.h"
 #include "vertex_manager_fixed.h"
@@ -15,9 +14,9 @@
 #include "vertex_allocator_fixed.h"
 #include "data_storage_bucket_list.h"
 #include "data_storage_binary_heap.h"
-#include "path_manager.h"
+#include "problem_solver.h"
+#include "path_manager_params.h"
 #include "graph_engine_space.h"
-#include "profiler.h"
 
 #ifndef AI_COMPILER
 #	include "operator_condition.h"
@@ -25,18 +24,18 @@
 #	include "operator_abstract.h"
 #endif // AI_COMPILER
 
-namespace hash_fixed_vertex_manager {
-	
+namespace hash_fixed_vertex_manager 
+{
 IC	u32 to_u32	(GraphEngineSpace::CWorldState const &other)
 {
 	return	(other.hash_value());
 }
-
 } // namespace hash_fixed_vertex_manager
 
 using namespace GraphEngineSpace;
 
-class CGraphEngine {
+class AI_API CGraphEngine 
+{
 public:
 #ifndef AI_COMPILER
 	typedef CDataStorageBinaryHeap							CSolverPriorityQueue;

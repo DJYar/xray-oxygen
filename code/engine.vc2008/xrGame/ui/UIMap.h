@@ -1,4 +1,5 @@
 #pragma once
+#include "../path_manager.h"
 #include "../xrUICore/UIStatic.h"
 #include "../xrUICore/UIWndCallback.h"
 

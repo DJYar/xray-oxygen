@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "object_handler.h"
 #include "object_handler_space.h"
 #include "object_handler_planner.h"

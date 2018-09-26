@@ -13,7 +13,7 @@
 #include "../xrScripts/export/script_export_space.h"
 #include "xr_time.h"
 #include "character_info_defs.h"
-#include "game_graph_space.h"
+#include "../xrAICore/game_graph_space.h"
 #include "game_location_selector.h"
 
 enum EPdaMsg;

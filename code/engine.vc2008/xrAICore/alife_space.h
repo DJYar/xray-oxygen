@@ -6,6 +6,7 @@
 //	Description : ALife space
 ////////////////////////////////////////////////////////////////////////////
 #pragma once
+#include "linker.h"
 // ALife objects, events and tasks
 #define ALIFE_VERSION				0x0006
 #define ALIFE_CHUNK_DATA			0x0000
@@ -29,7 +30,8 @@ class CSE_ALifeItemWeapon;
 class CSE_ALifeSchedulable;
 class CGameGraph;
 
-namespace ALife {
+namespace ALife 
+{
 	typedef u64	_CLASS_ID;									// Class ID
 	typedef u16	_OBJECT_ID;									// Object ID
 	typedef u64	_TIME_ID;									// Time  ID
@@ -141,13 +143,14 @@ namespace ALife {
 		eAddonPermanent				= 1,	//постоянно подключено по умолчанию
 		eAddonAttachable			= 2		//можно присоединять
 	};
-	EHitType g_tfString2HitType(LPCSTR caHitType);
-	xr_token hit_types_token[];
+	AI_API EHitType g_tfString2HitType(LPCSTR caHitType);
+	AI_API xr_token hit_types_token[];
 
 	IC LPCSTR g_cafHitType2String(EHitType tHitType)
 	{
 		return get_token_name(hit_types_token, tHitType);
 	}
+
 	using INT_VECTOR = xr_vector<int>;
 	using OBJECT_VECTOR = xr_vector<_OBJECT_ID>;
     using OBJECT_IT = OBJECT_VECTOR::iterator;

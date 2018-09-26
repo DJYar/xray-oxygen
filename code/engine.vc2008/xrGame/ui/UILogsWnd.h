@@ -9,7 +9,7 @@
 #include "../xrUICore/UIWndCallback.h"
 
 #include "../ai_space.h"
-#include "../../xrServerEntities/alife_space.h"
+#include "../../xrServerEntities/../xrAICore/alife_space.h"
 #include "../xrUICore/xrUIXmlParser.h"
 
 class CUITextWnd;

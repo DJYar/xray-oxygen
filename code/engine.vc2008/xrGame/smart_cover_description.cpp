@@ -6,6 +6,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "smart_cover_description.h"
 #include "ai_space.h"
 #include "script_engine.h"

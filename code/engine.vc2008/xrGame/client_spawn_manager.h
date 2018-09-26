@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "script_callback_ex.h"
 #include "../xrScripts/export/script_export_space.h"
 

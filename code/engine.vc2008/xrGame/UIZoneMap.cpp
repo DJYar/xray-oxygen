@@ -10,7 +10,7 @@
 
 #include "actor.h"
 #include "ai_space.h"
-#include "game_graph.h"
+#include "../xrAICore/../xrAICore/../xrAICore/game_graph.h"
 
 #include "ui/UIMap.h"
 #include "../xrUICore/UIXmlInit.h"

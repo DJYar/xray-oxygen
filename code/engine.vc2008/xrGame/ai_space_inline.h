@@ -5,19 +5,7 @@
 //	Author		: Dmitriy Iassenev
 //	Description : AI space class inline functions
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
-
-IC	CGameGraph					&CAI_Space::game_graph				() const
-{
-	VERIFY					(m_game_graph);
-	return					(*m_game_graph);
-}
-
-IC	CGameGraph					*CAI_Space::get_game_graph			() const
-{
-	return					(m_game_graph);
-}
 
 IC	CLevelGraph		&CAI_Space::level_graph							() const
 {
@@ -34,12 +22,6 @@ IC	CEF_Storage					&CAI_Space::ef_storage				() const
 {
 	VERIFY					(m_ef_storage);
 	return					(*m_ef_storage);
-}
-
-IC	CGraphEngine				&CAI_Space::graph_engine			() const
-{
-	VERIFY					(m_graph_engine);
-	return					(*m_graph_engine);
 }
 
 IC	const CALifeSimulator		&CAI_Space::alife					() const
@@ -85,9 +67,10 @@ IC	doors::manager& CAI_Space::doors								() const
 
 IC	CAI_Space &ai													()
 {
-	if (!g_ai_space) {
-		g_ai_space			= xr_new<CAI_Space>();
+	if (!g_ai_space) 
+	{
+		g_ai_space = xr_new<CAI_Space>();
 		g_ai_space->init	();
 	}
-	return					(*g_ai_space);
+	return *(CAI_Space*)g_ai_space;
 }

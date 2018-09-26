@@ -7,12 +7,14 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "script_action_planner_wrapper.h"
 #include "script_game_object.h"
+#ifdef DEBUG
 #include "ai_debug.h"
+#endif
 
-
-#include "luabind/luabind.hpp"
+#include <luabind/luabind.hpp>
 
 void CScriptActionPlannerWrapper::setup			(CScriptGameObject *object)
 {

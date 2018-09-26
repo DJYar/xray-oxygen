@@ -11,8 +11,8 @@
 #include "action_management_config.h"
 #include "property_storage.h"
 #include "../xrScripts/export/script_export_space.h"
-#include "operator_abstract.h"
-#include "alife_space.h"
+#include "../xrAICore/operator_abstract.h"
+#include "../xrAICore/alife_space.h"
 
 class CScriptGameObject;
 

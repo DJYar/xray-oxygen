@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "object_handler_planner.h"
 #include "object_property_evaluators.h"
 #include "object_actions.h"

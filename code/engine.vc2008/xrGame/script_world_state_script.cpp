@@ -8,7 +8,7 @@
 
 #include "stdafx.h"
 #include "script_world_state.h"
-#include "condition_state.h"
+#include "../xrAICore/condition_state.h"
 
 #include "../../SDK/include/luabind/operator.hpp"
 
@@ -34,7 +34,7 @@ void CScriptWorldStateWrapper::script_register(lua_State *L)
 }
 
 #include "script_world_property.h"
-#include "operator_abstract.h"
+#include "../xrAICore/operator_abstract.h"
 
 
 #pragma optimize("s",on)

@@ -313,6 +313,7 @@ start GitParser\GitParser.exe</Command>
     <ClCompile Include="Envelope.cpp" />
     <ClCompile Include="FTimer.cpp" />
     <ClCompile Include="PostprocessAnimator.cpp" />
+    <ClCompile Include="random32.cpp" />
     <ClCompile Include="SPPInfo.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -374,6 +375,7 @@ start GitParser\GitParser.exe</Command>
     <ClInclude Include="DateTime.hpp" />
     <ClInclude Include="envelope.h" />
     <ClInclude Include="FTimer.h" />
+    <ClInclude Include="random32.h" />
     <ClInclude Include="XMLCore\Expression.h" />
     <ClInclude Include="xrMemoryDebug.h" />
     <ClInclude Include="xrMemory_C.h" />

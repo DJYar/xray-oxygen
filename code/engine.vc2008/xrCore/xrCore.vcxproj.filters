@@ -213,6 +213,7 @@
     <ClCompile Include="ThreadManager.cpp">
       <Filter>OS</Filter>
     </ClCompile>
+    <ClCompile Include="random32.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FTimer.h">
@@ -452,6 +453,7 @@
     <ClInclude Include="xrMemoryDebug.h">
       <Filter>Memory manager</Filter>
     </ClInclude>
+    <ClInclude Include="random32.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="xrCore.rc">

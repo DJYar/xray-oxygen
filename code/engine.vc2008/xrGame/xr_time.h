@@ -1,6 +1,6 @@
 #pragma once
 
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 
 class xrTime{
 	ALife::_TIME_ID		m_time;

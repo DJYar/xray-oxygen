@@ -5,14 +5,14 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Game graph class
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
-
+#include "linker.h"
 #include "game_graph_space.h"
 #include "../xrScripts/export/script_export_space.h"
 #include "game_level_cross_table.h"
 
-class CGameGraph {
+class AI_API CGameGraph
+{
 private:
 	friend class CRenumbererConverter;
 

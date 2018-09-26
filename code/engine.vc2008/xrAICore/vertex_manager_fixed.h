@@ -13,8 +13,8 @@ template <
 	typename _index_type,
 	u8 mask
 >
-struct CVertexManagerFixed {
-
+struct AI_API CVertexManagerFixed 
+{
 	template <template <typename _T> class T1>
 	struct VertexManager {
 		template<typename T2>

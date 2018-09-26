@@ -8,7 +8,7 @@
 
 #include "stdafx.h"
 #include "alife_spawn_registry_header.h"
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "../xrEngine/xrlevel.h"
 
 void CALifeSpawnHeader::load			(IReader	&file_stream)

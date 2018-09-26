@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "luabind/luabind.hpp"
 #include "script_game_object.h"
+#include "path_manager.h"
 
 #include "UsableScriptObject.h"
 #include "GameObject.h"

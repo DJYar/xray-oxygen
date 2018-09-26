@@ -112,7 +112,7 @@
 #	include "alife_monster_patrol_path_manager.h"
 #	include "alife_monster_detail_path_manager.h"
 #	include "alife_smart_terrain_task.h"
-#	include "game_graph.h"
+#	include "../xrAICore/game_graph.h"
 #	include "smart_zone.h"
 #	include "Scope.h"
 #	include "CustomOutfit.h"

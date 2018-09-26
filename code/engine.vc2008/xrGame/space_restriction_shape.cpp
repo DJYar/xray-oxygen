@@ -11,7 +11,7 @@
 #include "ai_space.h"
 #include "level_graph.h"
 #include "space_restrictor.h"
-#include "graph_engine.h"
+#include "../xrAICore/graph_engine.h"
 
 struct CBorderMergePredicate {
 	CSpaceRestrictionShape			*m_restriction;

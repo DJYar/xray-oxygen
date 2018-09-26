@@ -5,16 +5,12 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Edge path class
 ////////////////////////////////////////////////////////////////////////////
-
 #pragma once
-
 #include "vertex_path.h"
 
-template <
-	typename	_edge_type,
-	bool		bEuclidianHeuristics = true
->
-struct CEdgePath {
+template <typename _edge_type, bool bEuclidianHeuristics = true>
+struct AI_API CEdgePath
+{
 
 	template <template <typename _T> class T1>
 	struct DataStorageEdgePath {

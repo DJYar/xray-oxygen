@@ -12,6 +12,7 @@
 #include "../../actor.h"
 #include "../../Actor_Memory.h"
 #include "../../visual_memory_manager.h"
+#include "path_manager.h"
 
 #ifdef DEBUG
 extern bool show_restrictions(CRestrictedObject *object);

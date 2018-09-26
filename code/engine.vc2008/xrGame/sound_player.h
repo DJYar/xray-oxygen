@@ -8,9 +8,9 @@
 
 #pragma once
 
-#include "random32.h"
+#include "../xrCore/random32.h"
 #include "ai_sounds.h"
-#include "associative_vector.h"
+#include "../xrAICore/associative_vector.h"
 
 class CSoundPlayer : public CRandom32 {
 public:

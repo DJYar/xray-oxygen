@@ -149,7 +149,7 @@
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <ImportLibrary>$(xrLib)$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xrUICore.lib;IKAN.lib;min_obb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xrAICore.lib;xrUICore.lib;IKAN.lib;min_obb.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>
       </AdditionalOptions>
     </Link>
@@ -209,7 +209,7 @@
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <ImportLibrary>$(xrLib)$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xrUICore.lib;IKAN.lib;min_obb.lib;xrScripts.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xrAICore.lib;xrUICore.lib;IKAN.lib;min_obb.lib;xrScripts.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions> /EDITANDCONTINUE /LTCG %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
@@ -279,7 +279,7 @@
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <ImportLibrary>$(xrLib)$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xrUICore.lib;IKAN.lib;min_obb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xrAICore.lib;xrUICore.lib;IKAN.lib;min_obb.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
     </Link>
@@ -351,7 +351,7 @@
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <ImportLibrary>$(xrLib)$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xrUICore.lib;IKAN.lib;min_obb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xrAICore.lib;xrUICore.lib;IKAN.lib;min_obb.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
     </Link>
@@ -624,7 +624,6 @@
     <ClInclude Include="agent_manager_properties.h" />
     <ClInclude Include="agent_manager_properties_inline.h" />
     <ClInclude Include="alife_simulator.h" />
-    <ClInclude Include="..\xrServerEntities\alife_space.h" />
     <ClInclude Include="alife_simulator_base.h" />
     <ClInclude Include="alife_simulator_base_inline.h" />
     <ClInclude Include="alife_simulator_header.h" />
@@ -1140,11 +1139,6 @@
     <ClInclude Include="stalker_sound_data_visitor_inline.h" />
     <ClInclude Include="stalker_sound_data.h" />
     <ClInclude Include="stalker_sound_data_inline.h" />
-    <ClInclude Include="game_graph.h" />
-    <ClInclude Include="game_graph_inline.h" />
-    <ClInclude Include="..\xrServerEntities\game_graph_space.h" />
-    <ClInclude Include="game_level_cross_table.h" />
-    <ClInclude Include="game_level_cross_table_inline.h" />
     <CustomBuildStep Include="graph_abstract.h" />
     <CustomBuildStep Include="graph_abstract_inline.h" />
     <ClInclude Include="graph_edge.h" />
@@ -1157,14 +1151,6 @@
     <ClInclude Include="level_graph_vertex_inline.h" />
     <ClInclude Include="ai_object_location.h" />
     <ClInclude Include="ai_object_location_inline.h" />
-    <ClInclude Include="a_star.h" />
-    <ClInclude Include="a_star_inline.h" />
-    <ClInclude Include="dijkstra.h" />
-    <ClInclude Include="dijkstra_inline.h" />
-    <ClInclude Include="data_storage_constructor.h" />
-    <ClInclude Include="builder_allocator_constructor.h" />
-    <ClInclude Include="manager_builder_allocator_constructor.h" />
-    <ClInclude Include="manager_builder_allocator_constructor_inline.h" />
     <ClInclude Include="edge_path.h" />
     <ClInclude Include="edge_path_inline.h" />
     <ClInclude Include="vertex_path.h" />
@@ -1504,7 +1490,6 @@
     <ClInclude Include="quadtree.h" />
     <ClInclude Include="quadtree_inline.h" />
     <ClInclude Include="ai\weighted_random.h" />
-    <ClInclude Include="random32.h" />
     <ClInclude Include="..\xrServerEntities\shared_data.h" />
     <ClInclude Include="..\xrServerEntities\smart_cast.h" />
     <ClInclude Include="..\xrServerEntities\associative_vector.h" />
@@ -1747,7 +1732,6 @@
     <ClCompile Include="agent_manager_planner.cpp" />
     <ClCompile Include="agent_manager_actions.cpp" />
     <ClCompile Include="agent_manager_properties.cpp" />
-    <ClCompile Include="..\xrServerEntities\alife_space.cpp" />
     <ClCompile Include="alife_simulator_base.cpp" />
     <ClCompile Include="alife_simulator_base2.cpp" />
     <ClCompile Include="alife_simulator_header.cpp" />
@@ -2046,7 +2030,6 @@
     <ClCompile Include="Ai\Stalker\ai_stalker_fire.cpp" />
     <ClCompile Include="Ai\Stalker\ai_stalker_misc.cpp" />
     <ClCompile Include="ai\stalker\ai_stalker_script_entity.cpp" />
-    <ClCompile Include="game_graph_script.cpp" />
     <ClCompile Include="level_graph.cpp" />
     <ClCompile Include="level_graph_debug.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -2327,7 +2310,6 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_IA32|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="ai\weighted_random.cpp" />
-    <ClCompile Include="random32.cpp" />
     <ClCompile Include="xrGame.cpp" />
     <ClCompile Include="xrServer.cpp" />
     <ClCompile Include="game_base.cpp" />

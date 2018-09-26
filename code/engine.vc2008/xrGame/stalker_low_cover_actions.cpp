@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "path_manager.h"
 #include "stalker_low_cover_actions.h"
 #include "ai/stalker/ai_stalker.h"
 #include "sight_manager.h"

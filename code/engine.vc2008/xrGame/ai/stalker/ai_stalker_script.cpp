@@ -5,8 +5,8 @@
 //	Author		: Dmitriy Iassenev
 //	Description : Stalker script functions
 ////////////////////////////////////////////////////////////////////////////
-
 #include "stdafx.h"
+#include "path_manager.h"
 #include "ai_stalker.h"
 #include "../../stalker_decision_space.h"
 #include "ai_stalker_space.h"

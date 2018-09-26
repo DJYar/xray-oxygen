@@ -6,6 +6,7 @@
 //	Description : AI Behaviour for monster "Stalker"
 ////////////////////////////////////////////////////////////////////////////
 #include "stdafx.h"
+#include "path_manager.h"
 #include "ai_stalker.h"
 #include "../ai_monsters_misc.h"
 #include "../../weapon.h"
@@ -13,8 +14,8 @@
 #include "../../phdestroyable.h"
 #include "../../CharacterPhysicsSupport.h"
 #include "../../script_entity_action.h"
-#include "../../game_level_cross_table.h"
-#include "../../game_graph.h"
+#include "../../../xrAICore/game_level_cross_table.h"
+#include "../../../xrAICore/game_graph.h"
 #include "../../inventory.h"
 #include "../../artefact.h"
 #include "../../phmovementcontrol.h"

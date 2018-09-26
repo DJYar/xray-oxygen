@@ -10,7 +10,7 @@
 #include "ai_space.h"
 #include "alife_simulator.h"
 #include "alife_object_registry.h"
-#include "game_graph.h"
+#include "../xrAICore/../xrAICore/../xrAICore/game_graph.h"
 
 #include "../xrEngine/date_time.h"
 #include "xrServer_Objects_ALife_Monsters.h"

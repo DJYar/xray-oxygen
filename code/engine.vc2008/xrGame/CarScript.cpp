@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "alife_space.h"
+#include "../xrAICore/alife_space.h"
 #include "Car.h"
 #include "CarWeapon.h"
 #include "script_game_object.h"

@@ -5,7 +5,7 @@
 #include "../xrScripts/export/script_export_space.h"
 #include "../xrEngine/StatGraph.h"
 #include "../xrServerEntities/xrMessages.h"
-#include "../xrServerEntities/alife_space.h"
+#include "../xrServerEntities/../xrAICore/alife_space.h"
 #include "../xrcore/xrDebug.h"
 #include "xrServer.h"
 #include "GlobalFeelTouch.hpp"

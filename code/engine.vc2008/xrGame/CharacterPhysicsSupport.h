@@ -1,5 +1,5 @@
 #pragma once
-#include "../xrServerEntities/alife_space.h"
+#include "../xrServerEntities/../xrAICore/alife_space.h"
 #include "Entity_Alive.h"
 #include "PHSoundPlayer.h"
 #include "Phdestroyable.h"
